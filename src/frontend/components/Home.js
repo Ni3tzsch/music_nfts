@@ -70,7 +70,7 @@ const Home = ({ contract }) => {
 
   if (loading) return (
     <main style={{ padding: "1rem 0" }}>
-      <h2>Loading...</h2>
+      <h2>Chargement...</h2>
     </main>
   )
   return (
@@ -116,7 +116,7 @@ const Home = ({ contract }) => {
                 <Card.Footer>
                   <div className='d-grid my-1'>
                     <Button onClick={() => buyMarketItem(marketItems[currentItemIndex])} variant="primary" size="lg">
-                      {`ACHETEZ À ${ethers.utils.formatEther(marketItems[currentItemIndex].price)} ETH`}
+                      {`ACHETEZ À ${ethers.utils.formatEther(marketItems[currentItemIndex].price)} SNTK`}
                     </Button>
                   </div>
                 </Card.Footer>
